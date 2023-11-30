@@ -11,6 +11,7 @@ const Weather = () => {
         `http://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},IN&appid=${APIkey}`
       );
       const result = await response.json();
+      console.log(APIkey, result);
 
       setData(result);
     } catch (error) {
