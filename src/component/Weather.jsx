@@ -8,7 +8,7 @@ const Weather = () => {
   const fetchData = async (zipCode) => {
     try {
       const response = await fetch(
-        `http://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},IN&appid=${APIkey}`
+        `https://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},IN&appid=${APIkey}`
       );
       const result = await response.json();
 
